@@ -27,7 +27,7 @@
                             <label for="tele">Telefono: </label>
                         </div>
                         <div class="mb-3 col-5 form-floating">
-                            <input type="text" name="txt_correo" required="true" class="form-control" autocomplete="off" id="cor" placeholder="correo">
+                            <input type="email" name="txt_correo" required="true" class="form-control" autocomplete="off" id="cor" placeholder="correo">
                             <label for="cor">Correo: </label>
                         </div>
                     </div>
