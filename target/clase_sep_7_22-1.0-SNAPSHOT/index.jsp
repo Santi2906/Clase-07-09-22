@@ -11,6 +11,7 @@
     <body>
         <div class="container-fluid">
             <h1 class="text-center">Bienvenido a mi pagina web con Java, GIT y Heroku</h1>
+            <h1>Ramas con git</h1>
             <div class="abs-center">
                 <form action="control" method="GET" class="border p-3 form">
                     <div class="row g-3 align-items-center">
@@ -27,7 +28,7 @@
                             <label for="tele">Telefono: </label>
                         </div>
                         <div class="mb-3 col-5 form-floating">
-                            <input type="text" name="txt_correo" required="true" class="form-control" autocomplete="off" id="cor" placeholder="correo">
+                            <input type="email" name="txt_correo" required="true" class="form-control" autocomplete="off" id="cor" placeholder="correo">
                             <label for="cor">Correo: </label>
                         </div>
                     </div>

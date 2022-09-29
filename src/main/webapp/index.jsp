@@ -11,6 +11,7 @@
     <body>
         <div class="container-fluid">
             <h1 class="text-center">Bienvenido a mi pagina web con Java, GIT y Heroku</h1>
+            <h1>Ramas con git</h1>
             <div class="abs-center">
                 <form action="control" method="GET" class="border p-3 form">
                     <div class="row g-3 align-items-center">
