@@ -60,6 +60,7 @@ public class control extends HttpServlet {
         String a = request.getParameter("txt_apellidos");
         String t = request.getParameter("telefono");
         String c = request.getParameter("txt_correo");
+        String p = request.getParameter("txt_psw");
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */

@@ -23,6 +23,7 @@
                             <input type="text" name="txt_apellidos" required="true" class="form-control" id="apellido" placeholder="apellido">
                             <label for="apellido">Apellidos: </label> 
                         </div>
+                        
                         <div class="mb-3 col-5 form-floating">
                             <input type="number" name="telefono" required="true" class="form-control" autocomplete="off" id="tele" placeholder="tele">
                             <label for="tele">Telefono: </label>
@@ -30,6 +31,10 @@
                         <div class="mb-3 col-5 form-floating">
                             <input type="email" name="txt_correo" required="true" class="form-control" autocomplete="off" id="cor" placeholder="correo">
                             <label for="cor">Correo: </label>
+                        </div>
+                         <div class="mb-2 col-5 form-floating">          
+                            <input type="password" name="txt_psw" required="true" class="form-control" id="psw" placeholder="Contraseña">
+                            <label for="psw">Contraseña: </label> 
                         </div>
                     </div>
                     <button type="submit" name="btnRegistrar"  
