@@ -69,6 +69,11 @@ public class PersonaDTO {
     }
 
     @Override
+    public String toString() {
+        return "PersonaDTO{" + "nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + ", correo=" + correo + ", password=" + password + '}';
+    }
+
+    @Override
     public int hashCode() {
         int hash = 7;
         hash = 59 * hash + Objects.hashCode(this.nombre);

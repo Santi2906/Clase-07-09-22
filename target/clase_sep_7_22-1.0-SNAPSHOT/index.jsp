@@ -13,6 +13,7 @@
             <h1 class="text-center">Bienvenido a mi pagina web con Java, GIT y Heroku</h1>
             <div class="abs-center">
                 <form action="control" method="GET" class="border p-3 form">
+                    <br>
                     <div class="row g-3 align-items-center">
                         <div class="col-4"></div>
                         <div class="mb-2 col-5 form-floating">
@@ -39,7 +40,7 @@
                             <input type="password" name="txt_psw" required="true" class="form-control" id="psw" placeholder="Contraseña">
                             <label for="psw">Contraseña: </label> 
                         </div>
-                    </div>
+                    </div><br>
                     <div class="text-center">
                         <button type="submit" name="btnRegistrar" 
                                 class="btn btn-outline-primary btn-lg" >Registrar</button>

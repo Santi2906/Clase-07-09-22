@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class Conexion_Sigleton {
     private static Conexion_Sigleton instance;
     private Connection connection;
-    private String url = "jdbc:postgresql://localhost:5432/jdbc";
+    private String url = "jdbc:postgresql://localhost:5432/bd_bejarano";
     private String username = "postgres";
     private String password = "123456";
 

@@ -4,8 +4,14 @@ package com.santiago.clase_sep_7_22;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
+import com.santiago.DAO.PersonaDAO;
+import com.santiago.DTO.PersonaDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -41,6 +47,7 @@ public class control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -102,6 +109,13 @@ public class control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+        
+        PersonaDAO dao1= new PersonaDAO();
+        List<PersonaDTO> lista1 = null;
+       
+        for(PersonaDTO i : lista1){
+            System.out.println(i.toString());
+        }
     }
 
     /**
@@ -132,6 +146,7 @@ public class control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+       
     }
 
     /**
