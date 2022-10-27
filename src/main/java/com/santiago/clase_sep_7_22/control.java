@@ -109,11 +109,12 @@ public class control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+     
         
-        PersonaDAO dao1= new PersonaDAO();
-        List<PersonaDTO> lista1 = null;
+       PersonaDAO dao= new PersonaDAO();
+        List<PersonaDTO> lista = dao.readAll();
        
-        for(PersonaDTO i : lista1){
+        for(PersonaDTO i : lista){
             System.out.println(i.toString());
         }
     }

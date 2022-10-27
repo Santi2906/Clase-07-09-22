@@ -27,16 +27,16 @@ public class Conexion {
     }
     public Conexion() {
         this.conectar = null;
-        this.BD = "bd_bejarano";
+        this.BD = "d6brku9lfeven7";
         this.usuario = "postgres";
         this.contra = "123456";
     }
      public void conectar(){
          try{
              Class.forName("org.postgresql.Driver");
-             this.BD="jdbc:postgresql://127.0.0.1:5432/bd_bejarano";
-             this.usuario="postgres";
-             this.contra="123456";
+             this.BD="jdbc:postgresql://ec2-52-3-200-138.compute-1.amazonaws.com:5432/d6brku9lfeven7";
+             this.usuario="pctpolnzdylbln";
+             this.contra="de29f2774be451608eb860fd87dd65b65630a6fcf4c6f52cb5eea875e18868eb";
              this.conectar= (Connection) DriverManager.getConnection(BD,usuario,contra);
          } catch (ClassNotFoundException  | HeadlessException | SQLException e) {
              System.out.println("Error al conectar: " + e);

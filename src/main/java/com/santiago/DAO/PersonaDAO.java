@@ -19,16 +19,16 @@ import java.util.List;
  */
 public class PersonaDAO {
 
-    private static final String SQL_READALL = "SELECT * FROM tb_persona ";
-    
+    private static final String SQL_READALL = "SELECT * FROM bd_persona ";
+    Conexion con= new Conexion();
 
     public PersonaDAO() {
-       
+       con.conectar();
     }
 
     public List<PersonaDTO> readAll() {
-        Conexion con= new Conexion();
-        con.conectar();
+        
+        
         List<PersonaDTO> lista = null;
         PreparedStatement ps;
         try {
