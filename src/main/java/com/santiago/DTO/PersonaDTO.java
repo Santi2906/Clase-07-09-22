@@ -11,20 +11,28 @@ import java.util.Objects;
  * @author administradorPC
  */
 public class PersonaDTO {
+    private Integer ID;
     private String nombre;
     private String apellido;
     private String telefono;
     private String correo;
     private String password;
 
-    public PersonaDTO(String nombre, String apellido, String telefono, String correo, String password) {
+    public PersonaDTO(Integer ID,String nombre, String apellido, String telefono, String correo, String password) {
+        this.ID = ID;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.correo = correo;
         this.password = password;
     }
-
+    public PersonaDTO(String nombre, String apellido, String telefono, String correo, String password) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.password = password;
+    }   
     public PersonaDTO() {
     }
 
@@ -70,17 +78,26 @@ public class PersonaDTO {
 
     @Override
     public String toString() {
-        return "PersonaDTO{" + "nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + ", correo=" + correo + ", password=" + password + '}';
+        return "PersonaDTO{" + "ID=" + ID + ", nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + ", correo=" + correo + ", password=" + password + '}';
+    }
+
+    public Integer getID() {
+        return ID;
+    }
+
+    public void setID(Integer ID) {
+        this.ID = ID;
     }
 
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + Objects.hashCode(this.nombre);
-        hash = 59 * hash + Objects.hashCode(this.apellido);
-        hash = 59 * hash + Objects.hashCode(this.telefono);
-        hash = 59 * hash + Objects.hashCode(this.correo);
-        hash = 59 * hash + Objects.hashCode(this.password);
+        hash = 67 * hash + Objects.hashCode(this.ID);
+        hash = 67 * hash + Objects.hashCode(this.nombre);
+        hash = 67 * hash + Objects.hashCode(this.apellido);
+        hash = 67 * hash + Objects.hashCode(this.telefono);
+        hash = 67 * hash + Objects.hashCode(this.correo);
+        hash = 67 * hash + Objects.hashCode(this.password);
         return hash;
     }
 
@@ -108,7 +125,12 @@ public class PersonaDTO {
         if (!Objects.equals(this.correo, other.correo)) {
             return false;
         }
-        return Objects.equals(this.password, other.password);
+        if (!Objects.equals(this.password, other.password)) {
+            return false;
+        }
+        if (!Objects.equals(this.ID, other.ID)) {
+            return false;
+        }
+        return true;
     }
-    
 }
